@@ -63,10 +63,13 @@ textarea {
   resize: none; }
 
 .heading-primary {
-  font-size: 6rem;
   text-transform: uppercase;
+  font-size: 6rem;
   letter-spacing: 3px;
-  text-align: center; }
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+ }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 4.5rem; } }
@@ -93,17 +96,17 @@ textarea {
   margin-bottom: 3.5rem;
   position: relative; }
   .heading-sec__main--lt {
-    color: #fff; }
+    color: #111; }
     .heading-sec__main--lt::after {
       content: '';
-      background: #fff !important; }
+      background: #facf0f !important; }
   .heading-sec__main::after {
     content: '';
     position: absolute;
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: #facf0f;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -124,7 +127,7 @@ textarea {
     .heading-sec__sub {
       font-size: 1.8rem; } }
   .heading-sec__sub--lt {
-    color: #eee; }
+    color: #333; }
 
 .heading-sm {
   font-size: 2.2rem;
@@ -137,7 +140,7 @@ textarea {
   width: 92%; }
 
 .btn {
-  background: #fff;
+  background: #facf0f;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -155,12 +158,11 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: #0062b9;
+    background: #facf0f;
     color: #fff; }
   .btn--theme-inv {
-    color: #0062b9;
     background: #fff;
-    border: 2px solid #0062b9;
+    border: 2px solid #facf0f;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -171,11 +173,11 @@ textarea {
       padding: 8rem 0; } }
 
 .text-primary {
-  color: #fff;
-  font-size: 2.2rem;
-  text-align: center;
-  width: 100%;
-  line-height: 1.6; }
+  color: #333;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6; }
   @media only screen and (max-width: 37.5em) {
     .text-primary {
       font-size: 2rem; } }
@@ -185,7 +187,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(245,245,245,.8), rgba(245,245,245,.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -198,9 +200,10 @@ textarea {
   .home-hero__socials {
     position: absolute;
     top: 50%;
-    border: 2px solid #eee;
-    border-left: 2px solid #eee;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    background: #fff;
+    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+    padding: 0.5rem; }
     @media only screen and (max-width: 56.25em) {
       .home-hero__socials {
         display: none; } }
@@ -217,9 +220,11 @@ textarea {
   .home-hero__social-icon-link {
     width: 100%;
     display: block;
-    padding: 1.2rem;
-    border-bottom: 2px solid #eee;
-    transition: background .3s; }
+    padding: 1rem;
+    transition: background .3s;
+    border-radius: 5px;
+   }
+   
     .home-hero__social-icon-link:hover {
       background: rgba(255, 255, 255, 0.1); }
     .home-hero__social-icon-link--bd-none {
@@ -323,7 +328,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(245,245,245,.8), rgba(245,245,245,.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -404,7 +409,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(245,245,245,.8), gba(245,245,245,.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -515,7 +520,7 @@ textarea {
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #0062b9; }
+      color: #facf0f; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
@@ -554,7 +559,7 @@ textarea {
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #0062b9; }
+      color: #facf0f; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -675,7 +680,7 @@ textarea {
 .mouse {
   width: 25px;
   height: 40px;
-  border: 2px solid #eee;
+  border: 2px solid #333;
   border-radius: 60px;
   position: relative;
   overflow: hidden; }
@@ -687,7 +692,7 @@ textarea {
     top: 7px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #eee;
+    background-color: #333;
     border-radius: 50%;
     opacity: 1;
     animation: wheel 1.3s infinite;
